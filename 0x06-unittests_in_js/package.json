@@ -1,13 +1,14 @@
 {
   "name": "0x06-unittests_in_js",
   "version": "1.0.0",
-  "description": "Unittests in JS",
+  "description": "Unittest in Node.js",
   "main": "0-calcul.js",
   "scripts": {
-    "test": "mocha 0-calcul.test.js",
-    "lint": "eslint 0-calcul.js"
+    "test": "mocha 0-calcul.test.js"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  }
 }

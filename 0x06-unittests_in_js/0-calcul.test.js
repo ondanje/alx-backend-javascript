@@ -1,10 +1,25 @@
 const assert = require('assert');
 const calculateNumber = require('./0-calcul');
-const { describe } = require('node:test');
 
 
 describe('calculateNumber', () => {
-  it('should return the sum of rounded nymbers', () => {
-	assert.strictEqual(calculateNumber(1.4, 2.6), 4);
-});
+  describe('calculate number', function() {
+
+		it('shoulds return the sum of two numbers', function() {
+			assert.strictEqual(calculateNumber(1, 3),4)
+		});
+
+		it('shoulds return the sum of one  decimal number', function() {
+			assert.strictEqual(calculateNumber(1, 3.7),5)
+		});
+
+		it('should handle two decimal numbers', function() {
+			assert.strictEqual(calculateNumber(1.2, 3.7), 5)
+		});
+
+		it('should handle negative number', function() {
+			assert.strictEqual(calculateNumber(-1, 3),2 )
+		});
+  });
+
 });
