@@ -17,8 +17,8 @@ describe('calculateNumber', () => {
 			assert.strictEqual(calculateNumber(1.2, 3.7), 5)
 		});
 
-		it('should handle negative number', function() {
-			assert.strictEqual(calculateNumber(-1, 3),2 )
+		it('should handle second number rounded', function() {
+			assert.strictEqual(calculateNumber(1.5, 3.7),6 )
 		});
   });
 
