@@ -18,7 +18,7 @@ describe('calculateNumber', () => {
 		});
 
 		it('should handle second number rounded', function() {
-			assert.strictEqual(calculateNumber(1.5, 3.7),6 )
+			assert.strictEqual(calculateNumber(2.499, 3.499),5)
 		});
   });
 
