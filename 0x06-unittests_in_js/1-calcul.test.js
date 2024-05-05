@@ -40,10 +40,13 @@ describe('Basic Tests', () => {
 			assert.strictEqual(calculateNumber('DIVIDE', -6, 3),-2)
 		});
 		it('should return the difference of decimal number', () => {
-			assert.strictEqual(calculateNumber('DIVIDE', 4.0, 2.0),2)
+			assert.strictEqual(calculateNumber('DIVIDE', 1.4, 4.5),0.2)
 		});
 		it('should handle second number rounded', () => {
 			assert.strictEqual(calculateNumber('DIVIDE', 6.499, 3.4999),2)
+		});
+		it('should handle division by zeo', () => {
+			assert.strictEqual(calculateNumber('DIVIDE', 6, 0),'Error')
 		});
 	});
 
